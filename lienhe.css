@@ -1,0 +1,85 @@
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #1a1a1a;
+}
+
+.company-info {
+    max-width: 40%;
+}
+
+.company-info h2 {
+    font-size: 24px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.company-info p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.contact-details p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details i {
+    color: #003366;
+    margin-right: 10px;
+}
+
+.feedback-info {
+    width: 50%;
+}
+
+.feedback-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.feedback-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.feedback-info th, .feedback-info td {
+    padding: 5px;
+    text-align: left;
+    color: #1a1a1a;
+}
+
+.feedback-info th {
+    width: 5%;
+}
+
+.feedback-info td {
+    font-size: 14px;
+}
+
+.feedback-info td:last-child {
+    color: #003366;
+    font-weight: bold;
+}
+
+.deal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 260px;
+    height: 60px;
+    background-color: #2171c0;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+}

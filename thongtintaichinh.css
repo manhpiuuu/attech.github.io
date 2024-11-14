@@ -1,0 +1,48 @@
+.report-list {
+    width: 100%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody td {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    vertical-align: top;
+    color: #333;
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px dotted #ddd;
+}
+
+.report-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.report-link i {
+    color: red;
+    font-size: 16px;
+}
+
+tbody td p {
+    margin: 0;
+    color: #666;
+}

@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0073e6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.login-container {
+    width: 350px;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #888;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background-color: #218838;
+}
+
+.login-footer {
+    margin-top: 15px;
+}
+
+.back-link {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover, .forgot-password:hover {
+    text-decoration: underline;
+}

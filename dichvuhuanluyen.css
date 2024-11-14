@@ -1,0 +1,40 @@
+img {
+    width: 100%;
+}
+
+h1 {
+    color: #004080;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #004080;
+    font-size: 20px;
+    margin: 20px 0 10px 20px;
+}
+
+
+p {
+    margin: 0 20px 10px 20px;
+    line-height: 1.6;
+}
+
+ul {
+    margin: 10px 40px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

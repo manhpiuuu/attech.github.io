@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #18367f;
+    height: 208px;
+}
+
+.header-up {
+    
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-left: 180px;
+    margin-top: 10px;
+}
+
+.header-logo img {
+    width: 300px;
+    height: 150px;
+}
+
+.header-name {
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-search {
+    display: flex;
+    margin-left: 500px;    
+    align-items: center;
+    width: 100px;
+    justify-content: space-around;
+    
+}
+
+.header-search i {
+    color: white;
+}
+
+.header-search img {
+    width: 30px;
+    height: 30px;
+}
+
+.header-down {
+    padding: 10px 0;
+}
+
+/* Styling the unordered list */
+.menu-bar {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center the menu */
+}
+
+/* Styling each menu item */
+.menu-bar li {
+    margin: 0 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-bar li a{
+    color: white;
+}
+
+.menu-bar li ul li a {
+    color: #0044cc;
+}
+
+
+/* Hover effect for each item */
+.menu-bar li:hover {
+    color: #FFA500; /* Orange color on hover */
+}
+
+/* Adding the underline effect for active or hovered items */
+.menu-bar li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #FFA500; /* Orange color */
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.hoat-dong-dang-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+/* When hovering or active */
+.menu-bar li:hover::after {
+    width: 100%;
+}
+
+/* CSS cho dropdown menu */
+.hoat-dong-dang-dropdown {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    min-width: 200px;
+    z-index: 1;
+}
+.hoat-dong-dang-dropdown a {
+    text-decoration: none;
+    color: #0078b6;
+}
+
+.hoat-dong-dang-dropdown li {
+    padding: 10px;
+    color: #333;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.hoat-dong-dang-dropdown li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Hiển thị menu con khi hover */
+.hoat-dong-dang-menu:hover .hoat-dong-dang-dropdown {
+    display: block;
+}
+
+
+#image-container {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    border-top: 10px solid transparent; /* Đặt border trên là transparent */
+    box-shadow: 0 -10px 20px rgba(255, 255, 255, 0.7); /* Tạo hiệu ứng blur màu trắng */
+}
+#image-container img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+}
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.left-button {
+    left: 10px;
+}
+.right-button {
+    right: 10px;
+}
+
+.content-acitivity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-activity h2 {
+    text-align: center; /* Căn giữa chữ */
+    text-transform: uppercase; /* Chữ viết hoa hết */
+    color: #0565cc; /* Màu chữ xanh */
+    margin-bottom: 20px; /* Khoảng cách dưới h2 */
+    font-size: 24px; /* Kích thước chữ */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.activities {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.acivity a {
+    text-decoration: none;
+}
+
+.activities {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Cho phép các phần tử vượt ra ngoài theo hàng nếu không đủ chỗ */
+    margin: 0 auto;
+    max-width: 1200px; /* Điều chỉnh chiều rộng tối đa */
+}
+
+/* Căn chỉnh từng hoạt động */
+.activity {
+    width: 30%; /* Mỗi hoạt động chiếm 30% chiều rộng */
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.activity img {
+    width: 100%; /* Chiều rộng ảnh 100% của thẻ chứa */
+    height: 250px; /* Đảm bảo ảnh giữ tỷ lệ */
+    border-radius: 8px; /* Bo tròn góc ảnh */
+    transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng khi hover */
+}
+
+.activity img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi hover */
+}
+
+.activity .img-link {
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+    color: inherit; /* Giữ nguyên màu chữ */
+    display: block;
+}
+
+.activity span {
+    display: block;
+    margin-top: 10px; /* Khoảng cách giữa ảnh và chữ */
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.img-link{
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center; /* Căn giữa chữ */
+    text-transform: uppercase; /* Chữ viết hoa hết */
+    color: #0565cc; /* Màu chữ xanh */
+    margin-bottom: 20px; /* Khoảng cách dưới h2 */
+    font-size: 24px; /* Kích thước chữ */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.grid-item {
+    display: block;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.grid-item img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.grid-item p {
+    margin-top: 0px;
+    padding: 15px 10px;
+    background-color: rgb(46, 132, 202);
+}
+
+
+.featured-news {
+    display: flex;
+    gap: 20px;
+}
+
+.featured-image {
+    width: 800px;
+}
+
+.news-list-container {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.news-title {
+    font-size: 18px;
+    color: #0044cc;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    margin-bottom: 15px;
+}
+
+.news-list li span {
+    color: #666;
+    font-size: 14px;
+}
+
+.news-list li a {
+    font-size: 16px;
+    color: #0565cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-list li p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* CSS cho phần footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00a0e9;
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h2, .footer-section h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    background-color: #0078b6;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
